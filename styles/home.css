@@ -10,11 +10,137 @@
 }
 
 :root {
+    --collor-light: #ffffff;
+    --collor-one: #D6D4C3;
+    --collor-two: #9F8257;
+    --collor-thre: #4E3A34;
+    --collor-four: #E4F09A;
+    --collor-five: #BACC21;
+    --collor-six: #849C1B;
+    --collor-seven: #486612;
+
+    --font-tittle: 'Anton', sans-serif;
+    --font-paragraph: 'Inter', sans-serif;
+    --font-cursive: 'Indie Flower', cursive;
+
     font-size: 62.5%; 
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: var(--light-color);
+    /* background-color: rgb(52, 52, 52); */
+    background-image: linear-gradient(to bottom, rgba(78, 58, 52, 0.8),rgba(255, 255, 255, 0.3)), url("../images/background-home-page.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+}
+
+.wrapper{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 2.4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9.4rem;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--collor-four);
+    max-width: 100%;
+    height: 7.2rem;
+    padding: 0 3.2rem;
+    border-radius: 5rem;
+}
+
+header img{
+    width: 17.8rem;
+}
+
+header a{
+    color: var(--collor-thre);
+    font-size: 2.4rem;
+    font-family: var(--font-paragraph);
+    font-weight: 500;
+}
+
+header .links{
+    display: flex;
+    gap: 4.8rem;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 12rem;
+}
+
+main div:nth-child(1){
+    width: 60%;
+}
+
+main div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main p{
+    color: var(--collor-light);
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    font-family: var(--font-paragraph);
+
+}
+
+main .logo-grande{
+    width: 38.9rem;
+    margin-bottom: 2.4rem;
+}
+
+main button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2.8rem ;
+    padding: 2.4rem 5.4rem ;
+    border-radius: 5rem;
+    background-color: var(--collor-four);
+}
+
+main button p{
+    font-family: var(--font-tittle);
+    font-size: 4.8rem;
+    color: var(--collor-thre);
+}
+
+.arrow{
+    width: 2.28rem;
+}
+
+
+.pass {
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin-left:100%;
+
+    -webkit-transition: margin-left 500ms ease-in;
+    -moz-transition: margin-left 500ms ease-in;
+    -o-transition: margin-left 500ms ease-in;
+    transition: margin-left 500ms ease-in;
 }
 
