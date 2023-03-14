@@ -32,6 +32,10 @@
     font-size: 62.5%; 
 }
 
+.open-menu, .close-menu{
+    display: none;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to bottom, rgba(78, 58, 52, 0.8),rgba(255, 255, 255, 0.3)), url("../images/background-home-page.png");
@@ -189,7 +193,22 @@ section{
         padding: 0;
     }
 
+    header a{
+       color: #000000; 
+       position: static;
+    }
 
-
+    header .pop-up-menu {
+        background-color: #4E3A34;
+        position: relative;
+        display: flex;
+        align-items: column;
+        
+        z-index: 10;
+        right: 1.6rem;
+        bottom: 1.6rem;
+        width: 90vw;
+        height: 130rem;
+    }
 
 }
