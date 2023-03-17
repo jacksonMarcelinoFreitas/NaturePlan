@@ -50,6 +50,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 16px;
 }
 
 .header{
@@ -59,17 +60,17 @@ body{
     background-color: var(--collor-four);
     max-width: 100%;
     height: 7.2rem;
-    padding: 2rem 3.2rem;   
+    padding: 1rem 3.2rem;   
     border-radius: 5rem;
 }
  
 header img{
-    width: 17.8rem;
+    width: 12rem;
 }
 
 header a{
     color: var(--collor-thre);
-    font-size: 2.4rem;
+    font-size: 2rem;
     letter-spacing: 0.2rem;
     font-family: coolvetica;
     font-weight: bolder;
@@ -112,7 +113,7 @@ main{
 
 main h1{
     font-family: coolvetica;
-    font-size: 9.6rem;
+    font-size: 6.4rem;
     color: var(--collor-thre);
     text-align: center;
     letter-spacing: 0.7rem;
@@ -120,14 +121,14 @@ main h1{
 
 main p{
     font-family: coolvetica;
-    font-size: 4rem;
+    font-size: 3.2rem;
     text-align: center;
     color: var(--collor-seven);
-    line-height: 3.5rem;
+    line-height: 2.8rem;
 }
 
 main .cover-page img{
-    width: 40rem;
+    width: 30rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -135,7 +136,7 @@ main .cover-page img{
 main a{
     background-color: var(--collor-two);
     border-radius: 5rem;
-    padding: 2rem 6.4rem;
+    padding: 1.5rem 4.2rem;
 
 }
 
@@ -144,21 +145,21 @@ main svg path{
 }
 
 section .div-boxes{
-    width: 100%;
-    background-color: var(--collor-two);
+    max-width: 100%;
     padding: 2.4rem;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
-    column-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 4.6rem;
+    column-gap: 6.4rem;
 }
 
 section .div-boxes .box{
     background-color: var(--collor-one);
-    height: 500px;
+    height: 36rem;
+    max-width: 100%;
     position: relative;
-    border-radius: 1.2rem;
+    border-radius: 3.2rem;
     overflow: hidden;
 }
 
@@ -167,6 +168,7 @@ section .box .description-box{
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: absolute;
 
     width: 100%;
     height: 20%;
@@ -178,6 +180,8 @@ section .box .description-box{
 section .box .description-box p{
     font-size: 3.2rem;
     font-family: coolvetica;
+    margin: auto;
+    color: var(--collor-light);
 }
 
 
