@@ -6,7 +6,6 @@
     border:0;
     box-sizing: border-box;
     text-decoration: none;
-    
 }
 
 @font-face {
@@ -33,12 +32,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to bottom, rgba(78, 58, 52, 0.8),rgba(255, 255, 255, 0.3)), url("../images/background-home-page.png");
     background-repeat: no-repeat;
     background-position: center; 
-    background-size: cover;
-    background-attachment: fixed;
-
     font-size: 10px;
 }
 
@@ -55,7 +50,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 9.4rem;
 }
 
 .header{
@@ -106,85 +100,98 @@ header .open-menu-icon path, .close-menu-icon path{
 }
 
 main{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%; 
-    padding: 0 12rem;
-}
+    height: 100vh;
+    width: 100%;
 
-main div:nth-child(1){
-    width: 40%;
-}
-
-main div:nth-child(2){
-    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 4.8rem;
+}
+
+main h1{
+    font-family: coolvetica;
+    font-size: 9.6rem;
+    color: var(--collor-thre);
+    text-align: center;
+    letter-spacing: 0.7rem;
 }
 
 main p{
-    color: var(--collor-four);
-    font-size: 4.5rem;
-    line-height: 4.8rem;
     font-family: coolvetica;
-    font-weight: bold;
-    letter-spacing: 0.3rem;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--collor-seven);
+    line-height: 3.5rem;
 }
 
-main .logo-grande{
-    width: 90%;
-    margin-bottom: 2.4rem;
+main .cover-page img{
+    width: 40rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
-main button{
-    display: flex;
-    height: 7.2rem;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2.8rem ;
-    padding: 2rem 3.2rem ;
+main a{
+    background-color: var(--collor-two);
     border-radius: 5rem;
-    background-color: var(--collor-four);
-    transition: transform 0.2s ease-in-out;
+    padding: 2rem 6.4rem;
+
 }
 
-main button:hover{
-    cursor: pointer;
-    background-color: var(--collor-five);
-    transform: scale(1.1);
+main svg path{
+    fill: var(--collor-thre);
 }
 
-main button p{
-    font-family: var(--font-tittle);
-    font-size: 3.5rem;
-    color: var(--collor-thre);
-}
-
-.arrow{
-    width: 2.28rem;
-}
-
-section{
-    padding: 0 12rem;
-}
-
-.box-planta{
-    height: 100%;
+section .div-boxes{
     width: 100%;
-    display: block;
-    border-radius: 0.6rem;
+    background-color: var(--collor-two);
+    padding: 2.4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 32px;
 }
 
-.carrosel-plantas{
-    margin-top: 1rem;
-    cursor: pointer;
+section .div-boxes .box{
+    background-color: var(--collor-one);
+    height: 500px;
+    position: relative;
+    border-radius: 1.2rem;
+    overflow: hidden;
 }
 
-.hide{
-    display: none;
+section .box .description-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    align-items: end;
+    background-color: var(--collor-thre);
 }
+
+section .box .description-box p{
+    font-size: 3.2rem;
+    font-family: coolvetica;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1000px)
