@@ -169,22 +169,22 @@ section .div-boxes .box{
 }
 
 section .div-boxes .box:nth-child(1){
-    background-image: url("../images/image-background-suculenta.jpg");
+    background-image: url("../images/imagem-flor-ave-do-paraiso.jpg");
 }
 section .div-boxes .box:nth-child(2){
-    background-image: url("../images/imagem-suculenta-cacto-rocha.jpg");
+    background-image: url("../images/imagem-flor-boa-noite.jpg");
 }
 section .div-boxes .box:nth-child(3){
-    background-image: url("../images/imagem-suculenta-rosa-do-deserto.jpg");
+    background-image: url("../images/imagem-flor-lirio.jpg");
 }
 section .div-boxes .box:nth-child(4){
-    background-image: url("../images/imagem-suculenta-zebra.jpg");
+    background-image: url("../images/imagem-flor-petunia.jpg");
 }
 section .div-boxes .box:nth-child(5){
-    background-image: url("../images/imagem-suculenta-jade.jpg");
+    background-image: url("../images/imagem-flor-hortensia.jpg");
 }
 section .div-boxes .box:nth-child(6){
-    background-image: url("../images/imagem-suculenta-dedo-de-moca.jpg");
+    background-image: url("../images/imagem-flor-margarida.jpg");
 }
 
 section .box .description-box{

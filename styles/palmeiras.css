@@ -76,6 +76,7 @@ header a{
     font-family: coolvetica;
     font-weight: bolder;
     transition: transform 0.2s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 header a:hover{
@@ -169,22 +170,22 @@ section .div-boxes .box{
 }
 
 section .div-boxes .box:nth-child(1){
-    background-image: url("../images/image-background-suculenta.jpg");
+    background-image: url("../images/imagem-palmeira-azul.jpg");
 }
 section .div-boxes .box:nth-child(2){
-    background-image: url("../images/imagem-suculenta-cacto-rocha.jpg");
+    background-image: url("../images/imagem-palmeira-coqueirinho.jpg");
 }
 section .div-boxes .box:nth-child(3){
-    background-image: url("../images/imagem-suculenta-rosa-do-deserto.jpg");
+    background-image: url("../images/imagem-palmeira-fenix.jpg");
 }
 section .div-boxes .box:nth-child(4){
-    background-image: url("../images/imagem-suculenta-zebra.jpg");
+    background-image: url("../images/imagem-palmeira-palmeira-real.jpg");
 }
 section .div-boxes .box:nth-child(5){
-    background-image: url("../images/imagem-suculenta-jade.jpg");
+    background-image: url("../images/imagem-palmeira-revenala.jpg");
 }
 section .div-boxes .box:nth-child(6){
-    background-image: url("../images/imagem-suculenta-dedo-de-moca.jpg");
+    background-image: url("../images/imagem-palmeira-leque.jpg");
 }
 
 section .box .description-box{

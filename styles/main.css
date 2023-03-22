@@ -33,25 +33,13 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-repeat: no-repeat;
-    background-position: center; 
     font-size: 10px;
 }
 
 .wrapper{
-    width: 80%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
-}
-
-.container{
-    height: 100%;
-    width: 100%;
-    padding: 2.4rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
 }
 
 .header{
@@ -101,125 +89,133 @@ header .open-menu-icon path, .close-menu-icon path{
     fill: var(--collor-thre);
 }
 
-main{
+.container-header{
+    width: 95%;
+    margin: 3.2rem;
+    background-color: transparent;
+    position: absolute;
+    z-index: 100;
+}
+
+.container:nth-child(even){
+    background-color: #9F8257;
+}
+
+.container.alt-flor{
+    background-image: linear-gradient(to bottom, rgba(81, 17, 104, .9),rgba(255, 255, 255, .5)), url("../images/image-backgrouns-flores.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container.alt-suc{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.3)), url("../images/image-background-suculenta.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container.alt-palm{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8),rgba(72, 102, 18, 0.9)), url("../images/image-background-palmeiras1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container.alt-cac{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.3)), url("../images/image-background-cactaceos.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
     height: 100vh;
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 4.8rem;
+    background-color: #4E3A34;
 }
 
-main h1{
-    font-family: coolvetica;
-    font-size: 6.4rem;
-    color: var(--collor-thre);
-    text-align: center;
-    letter-spacing: 0.7rem;
-}
-
-main p{
-    font-family: coolvetica;
-    font-size: 3.2rem;
-    text-align: center;
-    color: var(--collor-seven);
-    line-height: 2.8rem;
-}
-
-main .cover-page img{
-    width: 30rem;
-    text-align: center;
-    margin: 0 auto;
-}
-
-main a{
-    background-color: var(--collor-two);
-    border-radius: 5rem;
-    padding: 1.5rem 4.2rem;
-
-}
-
-main svg path{
-    fill: var(--collor-thre);
-}
-
-section .div-boxes{
-    max-width: 100%;
-    padding: 2.4rem;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 4.6rem;
-    column-gap: 6.4rem;
-}
-
-section .div-boxes .box{
-    background-color: var(--collor-one);
-    height: 36rem;
-    max-width: 100%;
-    position: relative;
-    border-radius: 3.2rem;
-    overflow: hidden;
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section .div-boxes .box:nth-child(1){
-    background-image: url("../images/image-background-suculenta.jpg");
-}
-section .div-boxes .box:nth-child(2){
-    background-image: url("../images/imagem-suculenta-cacto-rocha.jpg");
-}
-section .div-boxes .box:nth-child(3){
-    background-image: url("../images/imagem-suculenta-rosa-do-deserto.jpg");
-}
-section .div-boxes .box:nth-child(4){
-    background-image: url("../images/imagem-suculenta-zebra.jpg");
-}
-section .div-boxes .box:nth-child(5){
-    background-image: url("../images/imagem-suculenta-jade.jpg");
-}
-section .div-boxes .box:nth-child(6){
-    background-image: url("../images/imagem-suculenta-dedo-de-moca.jpg");
-}
-
-section .box .description-box{
+section{
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-
-    width: 100%;
-    height: 20%;
-    bottom: 0;
-    align-items: end;
-    background-color: var(--collor-thre);
+    justify-content: space-between;
 }
 
-section .box .description-box p{
-    font-size: 3.2rem;
-    font-family: coolvetica;
-    margin: auto;
+section .box.alt{
+    flex-direction: row-reverse;
+}
+
+section .box.alt .description{
     color: var(--collor-light);
 }
 
 
+section .box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+section .box h1{
+    font-size: 6.4rem;
+    font-family: coolvetica;
+    letter-spacing: .5rem;
+}
+
+section .box p{
+    font-size: 3.6rem;
+    font-family: var(--font-paragraph);
+}
+
+section .box .card{
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 36rem;
+    width: 36rem;
+    border-radius: 2rem;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
 
 
+section .card .button{
+    position: absolute;
+    bottom: 3.2rem;
+    background-color: var(--collor-one);
+    font-size: 4rem;
+    font-family: Coolvetica;
+    padding: .5rem 5rem;
+    border-radius: 5rem;
+}
 
+footer{
+    background-color: var(--collor-four);
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
 
+footer .icon{
+    height: 4rem;
+}
 
+footer .icon path{
+    fill: var(--collor-thre);
+}
 
-
-
-
-
-
+.hide{
+    display: none;
+}
 
 
 @media (max-width: 1000px)
