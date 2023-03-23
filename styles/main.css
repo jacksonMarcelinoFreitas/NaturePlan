@@ -48,8 +48,8 @@ body{
     justify-content: space-between;
     background-color: var(--collor-four);
     max-width: 100%;
-    height: 7.2rem;
-    padding: 1rem 3.2rem;   
+    height: 6rem;
+    padding: 0rem 3.2rem;   
     border-radius: 5rem;
 }
  
@@ -95,10 +95,6 @@ header .open-menu-icon path, .close-menu-icon path{
     background-color: transparent;
     position: absolute;
     z-index: 100;
-}
-
-.container:nth-child(even){
-    background-color: #9F8257;
 }
 
 .container.alt-flor{
@@ -157,11 +153,15 @@ section .box.alt .description{
 
 section .box{
     width: 100%;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.123);
+    border-radius: 2rem;
+    border: 1.5px solid  rgba(255, 255, 255, 0.233);
 }
+
 
 section .box h1{
     font-size: 6.4rem;
@@ -172,6 +172,15 @@ section .box h1{
 section .box p{
     font-size: 3.6rem;
     font-family: var(--font-paragraph);
+}
+
+section .box .description{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.2rem;
+    color: var(--collor-thre);
 }
 
 section .box .card{
@@ -190,12 +199,15 @@ section .box .card{
 section .card .button{
     position: absolute;
     bottom: 3.2rem;
-    background-color: var(--collor-one);
+    background-color: rgba(255, 255, 255, 0.829);
     font-size: 4rem;
     font-family: Coolvetica;
     padding: .5rem 5rem;
     border-radius: 5rem;
+    color: var(--collor-seven);
+    border: 1px solid rgba(72, 102, 18, 0.4);
 }
+
 
 footer{
     background-color: var(--collor-four);
@@ -220,30 +232,6 @@ footer .icon path{
 
 @media (max-width: 1000px)
 {
-
-    main{
-        width: 100%;
-        flex-direction: column;
-        gap: 48px;
-        padding: 0;
-        text-align: center;
-    }
-
-    main p{
-        font-size: 2.2rem;
-        line-height: normal;
-    }
-
-    main div.content{
-        width: 100%;
-    }
-
-
-    main .logo-grande{
-        width: 80%;
-        margin-bottom: 3rem;
-    }
-
     section{
         padding: 0;
     }
@@ -255,13 +243,6 @@ footer .icon path{
     header .nav{
         display: none;
     }
-
-    /* header .active{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-    } */
 
     header .active{
         display: flex;

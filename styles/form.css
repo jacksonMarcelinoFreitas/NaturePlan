@@ -1,0 +1,259 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: coolvetica;
+    src: url('../fonts/coolvetica/coolvetica\ rg.otf') format('opentype');
+}
+
+:root {
+    --collor-light: #ffffff;
+    --collor-one: #D6D4C3;
+    --collor-two: #9F8257;
+    --collor-thre: #4E3A34;
+    --collor-four: #E4F09A;
+    --collor-five: #BACC21;
+    --collor-six: #849C1B;
+    --collor-seven: #486612;
+
+    --font-tittle: 'Anton', sans-serif;
+    --font-paragraph: 'Inter', sans-serif;
+    --font-cursive: 'Indie Flower', cursive;
+
+    font-size: 62.5%; 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center; 
+    font-size: 10px;
+}
+
+.wrapper{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 2.4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--collor-four);
+    max-width: 100%;
+    height: 7.2rem;
+    padding: 1rem 3.2rem;   
+    border-radius: 5rem;
+}
+ 
+header img{
+    width: 12rem;
+}
+
+header a{
+    color: var(--collor-thre);
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: coolvetica;
+    font-weight: bolder;
+    transition: transform 0.2s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+header a:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    color: #486612;
+}
+
+header .nav{
+    display: flex;
+    gap: 4.8rem;
+}
+
+header .btn-mobile{
+    display: none;
+}
+
+header .open-menu-icon, .close-menu-icon{
+    width: 4rem;
+}
+
+header .open-menu-icon path, .close-menu-icon path{
+    fill: var(--collor-thre);
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4.8rem;
+}
+
+main h1{
+    font-family: coolvetica;
+    font-size: 6.4rem;
+    color: var(--collor-thre);
+    text-align: center;
+    letter-spacing: 0.7rem;
+}
+
+main p{
+    font-family: coolvetica;
+    font-size: 3.2rem;
+    text-align: center;
+    color: var(--collor-seven);
+    line-height: 2.8rem;
+}
+
+main .cover-page img{
+    width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main a{
+    background-color: var(--collor-two);
+    border-radius: 5rem;
+    padding: 1.5rem 4.2rem;
+
+}
+
+main svg path{
+    fill: var(--collor-thre);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px)
+{
+
+    main{
+        width: 100%;
+        flex-direction: column;
+        gap: 48px;
+        padding: 0;
+        text-align: center;
+    }
+
+    main p{
+        font-size: 2.2rem;
+        line-height: normal;
+    }
+
+    main div.content{
+        width: 100%;
+    }
+
+
+    main .logo-grande{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    section{
+        padding: 0;
+    }
+
+    header .btn-mobile{
+        display: flex;
+    }
+
+    header .nav{
+        display: none;
+    }
+
+    /* header .active{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    } */
+
+    header .active{
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        position: fixed;
+
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        z-index: 100;
+        background-color: var(--collor-two);
+        letter-spacing: 0.6rem;
+        border-radius: .5rem;
+        height: 100vh;
+        padding: 4.8rem;
+    }
+
+    header .active .btn-mobile{
+        margin-bottom: 10rem;
+    }
+
+
+
+    header .active svg path{
+        fill: var(--collor-four);
+    }
+
+    header .active .nav, .active a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        color: var(--collor-four);
+    }
+
+    header .active a:hover{
+        cursor: pointer;
+        color: #BACC21;
+        transition: transform .5s;
+    }
+
+}
+
+
+
+
+
+
