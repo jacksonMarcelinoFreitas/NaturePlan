@@ -51,7 +51,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 16px;
+    gap: 4.8rem;
 }
 
 .header{
@@ -105,7 +105,6 @@ header .open-menu-icon path, .close-menu-icon path{
 main{
     height: 100vh;
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,53 +112,176 @@ main{
     gap: 4.8rem;
 }
 
-main h1{
-    font-family: coolvetica;
-    font-size: 6.4rem;
-    color: var(--collor-thre);
-    text-align: center;
-    letter-spacing: 0.7rem;
-}
-
 main p{
     font-family: coolvetica;
-    font-size: 3.2rem;
-    text-align: center;
+    font-size: 4.8rem;
     color: var(--collor-seven);
-    line-height: 2.8rem;
-}
-
-main .cover-page img{
-    width: 30rem;
     text-align: center;
-    margin: 0 auto;
 }
 
-main a{
+main img.cover-page{
+    width: 30rem;
+    text-align: left;
+}
+
+main a.button-page, section#canais .button-page{
     background-color: var(--collor-two);
     border-radius: 5rem;
     padding: 1.5rem 4.2rem;
-
 }
 
-main svg path{
+main svg path, section#canais svg path{
     fill: var(--collor-thre);
 }
 
 
+/*formulario*/
+
+section#formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width:100%;
+
+    margin: 0 auto;
+}
+
+section form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 3.2rem;
+    padding: 6.4rem;
+
+    background-color: var(--collor-thre);
+    border-radius: 1.5rem;
+}
+
+section div.extern-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 3.2rem;
+    width: 90%;
+}
+section .box-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    width: 100%;
+}
+
+section .box-form p{
+    color: var(--collor-six);
+    margin-bottom: 1.2rem;
+    font-size: 3.2rem;
+}
 
 
 
+section .box-form .intern-form{
+    font-size: 2.4rem;
+    display: flex;
+    align-items: left;
+    flex-direction: column; 
+    gap: .8rem;
+}
+
+
+section .intern-form label{
+    color: var(--collor-two);
+    font-size: 2.4rem;
+}
+
+section .intern-form input{
+    height: 6.4rem;
+    width: 100%;
+    border-radius: .8rem;
+    padding-left: 1.2rem;
+    font-size: 1.8rem;
+}
+
+section .textarea{
+    max-width: 100%;
+    min-height: 6.4rem;
+    border-radius: .8rem;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    resize: vertical;
+}
+
+section .textarea::placeholder{
+    color: rgba(158, 128, 87, .5);
+}
+
+
+section .intern-form input::placeholder{
+    color: rgba(158, 128, 87, .5);
+}
+
+section#canais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.8rem;
+    
+}
+
+section#canais p{
+    font-size: 4.8rem;
+    font-family: coolvetica;
+}
+
+section#canais .icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#canais .icons svg{
+    width: 8.4rem;
+}
+section#canais .icons svg path{
+    fill: var(--collor-two);
+}
 
 
 
+section#canais .displays{
+    /* margin-top: 350px; */
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content:space-around ;
+    background-color: var(--collor-six);
+    width: 100%;
+    height: 52.8rem;
+    padding: 6.9rem;
+    gap: 4.4rem;
+}
 
+section#canais .display-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
+    width: 100%;
+    height: 100%;
+}
 
+section#canais .displays iframe{
+    width: 100%;
+    height: 100%;
 
-
-
-
+    border-radius: .8rem;
+}
 
 @media (max-width: 1000px)
 {
