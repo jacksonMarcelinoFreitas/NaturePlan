@@ -36,6 +36,7 @@ body{
     background-repeat: no-repeat;
     background-position: center; 
     font-size: 10px;
+    position: relative;
 }
 
 .wrapper{
@@ -105,12 +106,35 @@ header .open-menu-icon path, .close-menu-icon path{
 section.list{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 90vh;
+}
+
+section.list .box-list{
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    align-items: center;
     justify-content: space-around;
     gap: 3.2rem;
 }
 
+.button-page{
+    background-color: var(--collor-two);
+    border-radius: 5rem;
+    padding: 1.5rem 4.2rem;
+}
+
+.button-page path{
+    fill: var(--collor-thre);
+}
+
+
 section.list img{
-    width: 22rem;
+    width: 30rem;
 }
 
 section.list .box{
@@ -121,9 +145,10 @@ section.list .box{
 
 section.list .description{
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: linear-gradient(to bottom, var(--collor-light), #ebfbce);
     gap: 3.2rem;
 
     padding: 3.2rem ;
@@ -138,7 +163,7 @@ section.list .description span img{
 }
 
 section.list .description h1{
-    font-size: 2.4rem;
+    font-size: 3.6rem;
     font-family: coolvetica;
     color: #486612;
 }
@@ -147,22 +172,43 @@ section.list ul li{
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: .8rem;
-    font-size: 1.6rem;
+    gap: 1.2rem;
+    font-size: 2.4rem;
     font-family: coolvetica;
     color: var(--collor-six);
 }
 
+section.table .container-table{
+    height: 700px;
+    overflow: hidden;
+    overflow-y: auto;
+    /* overflow-x: auto; */
+}
+
+section .container-table::-webkit-scrollbar{
+    background-color: var(--collor-four);
+    border-radius: 5rem;
+    width: 1.2rem;
+}
+section .container-table::-webkit-scrollbar-thumb{
+    background-color: var(--collor-seven);
+    border-radius: 5rem;
+    width: 1.2rem;
+    box-shadow: #9F8257;
+}
+
 section.table{
     width: 100%;
-    border: 2px solid #E4F09A;
+    border: 2px solid var(--collor-four);
+    background-color: var(--collor-four);
     border-radius: 1.2rem;
+    margin-bottom: 9.6rem;
 }
 
 section.table table{
     border-collapse: collapse;
+    background-color: var(--collor-four);
     width: 100%;
-    background-color: var(--collor-five);
     font-size: 1.6rem;
     font-family: coolvetica;
     overflow: hidden;
@@ -170,13 +216,29 @@ section.table table{
 }
 
 section.table table thead tr th{
-    padding: 1rem 1.5rem;
+    background-color: #a5bb41;
+    padding: 2rem 1.5rem;
+    color: var(--collor-seven);
+    font-size: 2.4rem;
+    border-left: 2px solid var(--collor-four) ;
+    letter-spacing: .2rem;
 }
 
 section.table table tbody tr td{
-    border: 1px solid var(--collor-seven);
     color: var(--collor-thre);
-    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+section.table table tbody tr{
+    background-color: #d9e492;
+    border-bottom: 2px solid var(--collor-five);
+}
+
+section.table table tbody tr:nth-child(even){
+    background-color: #d9e492;
 }
 
 section.table table thead{
@@ -184,33 +246,37 @@ section.table table thead{
     background-color: var(--collor-seven);
 }
 
-section.table table tbody a{
-    height: 90rem;
-    width: 90rem;
-    border-radius: 50%;
-    background-color: #4E3A34;
-}
-section.table table .link-image {
-    height: 100px;
-    width: 100px;
+section.table table a {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     background-color: #E4F09A;
     overflow: hidden;
-
+    border: 3px solid var(--collor-six);
 }
 
-section .image-plant{
-    width: 50px;
+section.table .image-plant{
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
 
 footer{
-    background-color: var(--collor-four);
-    padding: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: left;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: var(--collor-four);
+
+    width: 100%;
+    padding: 1.4rem;
 }
 
 footer .icon{
