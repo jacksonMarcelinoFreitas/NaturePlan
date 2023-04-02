@@ -154,6 +154,10 @@ main .content{
     gap: 8rem;
 }
 
+main .content .text{
+    padding: 0 0 0 90px;
+}
+
 .image-audio{
     background-color: #9F8257;
     position: absolute;
@@ -166,12 +170,12 @@ main .content{
     align-items: left;
     justify-content: center;
     flex-direction: column ;
-    padding: 0 20rem;
+    padding: 0 25rem;
 }
 
 
 .image-audio p{
-    color: var(--collor-seven);
+    color: var(--collor-four);
     margin-bottom: 2.4rem;
 }
 

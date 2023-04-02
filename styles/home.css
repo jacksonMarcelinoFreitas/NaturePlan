@@ -178,6 +178,10 @@ header .open-menu-icon path, .close-menu-icon path{
     fill: var(--collor-thre);
 }
 
+.hide{
+    display: none;
+}
+
 
 
 
