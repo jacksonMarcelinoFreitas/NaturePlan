@@ -70,10 +70,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     background-color: var(--collor-four);
+
     max-width: 100%;
-    height: 7.2rem;
+    height: 6.2rem;
     padding: 1rem 3.2rem;   
+
     border-radius: 5rem;
 }
  
