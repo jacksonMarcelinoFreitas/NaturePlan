@@ -128,7 +128,7 @@ main .box-description {
 main {
     height: 80vh;
     gap: 3.2rem;
-    z-index: -1000
+    /* z-index: 1; */
 }
 
 main .box-description {
@@ -195,9 +195,12 @@ section .box-flor {
     background-color: var(--collor-six);
 
     border-radius: 2.4rem;
-    /* border: 2px solid rgba(159, 130, 87, 0.171); */
     position: relative;
     object-fit: cover;
+}
+
+section .box-flor:hover{
+    transition: transform 0.2s ease-in-out;
 }
 
 section .box-flor img {
@@ -207,7 +210,7 @@ section .box-flor img {
 section .box-text {
     position: absolute;
     /* z-index: 1000; */
-    background-color: rgba(229, 240, 154, 0.348);
+    background-color: #4e3a348b;
     bottom: 0;
     left: 0;
     right: 0;
@@ -317,7 +320,7 @@ footer .icon path {
         display: none;
     }
 
-    header .active {
+    header .menu.active {
         display: flex;
         align-items: end;
         flex-direction: column;
@@ -328,7 +331,7 @@ footer .icon path {
         left: 0;
         bottom: 0;
 
-        z-index: 1000;
+        z-index: 1001;
         background-color: var(--collor-thre);
         letter-spacing: 0.6rem;
         border-radius: .5rem;
@@ -369,31 +372,48 @@ footer .icon path {
 
     main {
         flex-direction: column;
-        /* width: 100%; */
+        justify-content: space-evenly;
+
         gap: 48px;
-
-        padding: 8rem;
-
+        height: 80vh;
         text-align: center;
     }
 
-    main p {
-        font-size: 2.2rem;
-        line-height: normal;
+    main .box-description{
+        width: 80%;
+        /* gap: 2rem; */
+        justify-content: space-evenly;
+        gap: 4rem;
     }
 
+    main .box-description p{
+        font-size: 4.2rem;
+    }
 
-    main .logo-grande {
-        width: 80%;
-        margin-bottom: 3rem;
+    main .box-description img{
+        width: 100%;
+    }
+
+    main .button{
+        padding: 2rem 6rem;
+    }
+
+    main .button p{
+        font-size: 4.6rem;
+    }
+
+    main .button .arrow{
+        width: 4.8rem;
     }
 
     section#box-grid {
-        padding: 0 9rem;
+        padding: 0 rem;
         grid-template-columns: 1fr;
     }
 
     section .box-flor {
         grid-template-columns: 1fr;
     }
+
+   
 }

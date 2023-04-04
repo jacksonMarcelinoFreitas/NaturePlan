@@ -1,9 +1,9 @@
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -28,184 +28,276 @@
     --font-paragraph: 'Inter', sans-serif;
     --font-cursive: 'Indie Flower', cursive;
 
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-image: linear-gradient(to top, #d4ddc3, #e9ece5);
+
     font-size: 10px;
-}
 
-.wrapper{
-    width: 80%;
-    height: 100vh;
-    margin: 0 auto;
-}
-
-.container{
-    height: 100%;
     width: 100%;
-    padding: 2.4rem 0;
+
+    /* position: relative; */
+}
+
+.wrapper {
+    padding: 2.2rem 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
+    gap: 4.8rem;
 }
 
-.header{
+.header {
+    position: sticky;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--collor-four);
+
+    margin: 0 4.8rem;
     max-width: 100%;
     height: 7.2rem;
-    padding: 1rem 3.2rem;   
+    padding: 1rem 3.2rem;
+
     border-radius: 5rem;
 }
- 
-header img{
+
+header img {
     width: 12rem;
 }
 
-header a{
-    color: var(--collor-thre);
+header a {
+    font-family: coolvetica;
     font-size: 2rem;
     letter-spacing: 0.2rem;
-    font-family: coolvetica;
     font-weight: bolder;
+
     transition: transform 0.2s ease-in-out;
+
+    color: var(--collor-thre);
 }
 
-header a:hover{
+header a:hover {
     transform: scale(1.1);
     font-weight: bold;
     color: #486612;
 }
 
-header .nav{
+header .nav {
     display: flex;
     gap: 4.8rem;
 }
 
-header .btn-mobile{
+header .btn-mobile {
     display: none;
 }
 
-header .open-menu-icon, .close-menu-icon{
+header .open-menu-icon,
+.close-menu-icon {
     width: 4rem;
 }
 
-header .open-menu-icon path, .close-menu-icon path{
+header .open-menu-icon path,
+.close-menu-icon path {
     fill: var(--collor-thre);
 }
 
-main{
-    height: 100vh;
-    width: 100%;
-
+main,
+main .box-description {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4.8rem;
 }
 
-main h1{
-    font-family: coolvetica;
-    font-size: 6.4rem;
-    color: var(--collor-thre);
-    text-align: center;
-    letter-spacing: 0.7rem;
+main {
+    height: 80vh;
+    gap: 3.2rem;
+    /* z-index: 1; */
 }
 
-main p{
-    font-family: coolvetica;
+main .box-description {
+    gap: 3.8rem;
+}
+
+main .box-description img {
+    width: 50rem;
+}
+
+main .box-description p {
     font-size: 3.2rem;
-    text-align: center;
+    font-family: coolvetica;
     color: var(--collor-seven);
-    line-height: 2.8rem;
 }
 
-main .cover-page img{
-    width: 30rem;
-    text-align: center;
-    margin: 0 auto;
-}
-
-main a{
-    background-color: var(--collor-two);
-    border-radius: 5rem;
-    padding: 1.5rem 4.2rem;
-
-}
-
-main svg path{
-    fill: var(--collor-thre);
-}
-
-section .div-boxes{
-    max-width: 100%;
-    padding: 2.4rem;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 4.6rem;
-    column-gap: 6.4rem;
-}
-
-section .div-boxes .box{
-    background-color: var(--collor-one);
-    height: 36rem;
-    max-width: 100%;
-    position: relative;
-    border-radius: 3.2rem;
-    overflow: hidden;
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section .div-boxes .box:nth-child(1){
-    background-image: url("../images/imagem-cacto-candelabro.jpg");
-}
-section .div-boxes .box:nth-child(2){
-    background-image: url("../images/imagem-cacto-estrela.png");
-}
-section .div-boxes .box:nth-child(3){
-    background-image: url("../images/imagem-cacto-facheiro-azul.jpg");
-}
-section .div-boxes .box:nth-child(4){
-    background-image: url("../images/imagem-cacto-macarrao.jpg");
-}
-section .div-boxes .box:nth-child(5){
-    background-image: url("../images/imagem-cacto-orelha-de-coelho.jpg");
-}
-section .div-boxes .box:nth-child(6){
-    background-image: url("../images/imagem-cacto-ourico.jpg");
-}
-
-section .box .description-box{
+main .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    gap: 2.4rem;
+
+    padding: 1rem 2.5rem;
+    border-radius: 7rem;
+    border: 3px solid #BACC21;
+
+    background-color: rgba(216, 224, 147, 0.615);
+
+    animation: button-animation 1s infinite;
+}
+
+main .button p {
+    font-size: 2.4rem;
+    font-family: coolvetica;
+    text-decoration: none;
+
+    color: var(--collor-thre);
+}
+
+main .button .arrow {
+    width: 2.4rem;
+}
+
+main .arrow path {
+    fill: var(--collor-seven);
+}
+
+.hide {
+    display: none;
+}
+
+section {
+    z-index: -1000;
+}
+
+section .box-flor {
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--collor-six);
+
+    border-radius: 2.4rem;
+    position: relative;
+    object-fit: cover;
+}
+
+section .box-flor:hover{
+    transition: transform 0.2s ease-in-out;
+}
+
+section .box-flor img {
+    height: 150%;
+}
+
+section .box-text {
     position: absolute;
+    /* z-index: 1000; */
+    background-color: #4e3a348b;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 12%;
+
+    font-size: 2.4rem;
+    font-family: coolvetica;
+    letter-spacing: .4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--collor-light);
+
+    border-top: 2px solid #E4F09A;
+
+}
+
+
+section#box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 10rem;
+    gap: 4rem;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    background-color: var(--collor-four);
 
     width: 100%;
-    height: 20%;
-    bottom: 0;
-    align-items: end;
-    background-color: var(--collor-thre);
+    padding: 1.4rem;
 }
 
-section .box .description-box p{
-    font-size: 3.2rem;
-    font-family: coolvetica;
-    margin: auto;
-    color: var(--collor-light);
+footer .icon {
+    height: 4rem;
+}
+
+footer .icon path {
+    fill: var(--collor-thre);
+}
+
+
+@keyframes menu-mobile {
+    0% {
+        background-color: #9F8257;
+        right: 50%;
+        opacity: 0;
+    }
+
+    50% {
+        background-color: #7a6444;
+        opacity: 0.7;
+    }
+
+    100% {
+        background-color: #4E3A34;
+        opacity: 1;
+    }
+}
+
+@keyframes button-animation {
+    0% {
+        transform: translate(0, 0);
+        /* posição inicial do botão */
+    }
+
+    50% {
+        transform: translate(0, -10px);
+        /* posição intermediária do botão (subindo) */
+    }
+
+    100% {
+        transform: translate(0, 0);
+        /* posição final do botão (descendo) */
+    }
 }
 
 
@@ -219,55 +311,16 @@ section .box .description-box p{
 
 
 
-
-
-
-@media (max-width: 1000px)
-{
-
-    main{
-        width: 100%;
-        flex-direction: column;
-        gap: 48px;
-        padding: 0;
-        text-align: center;
-    }
-
-    main p{
-        font-size: 2.2rem;
-        line-height: normal;
-    }
-
-    main div.content{
-        width: 100%;
-    }
-
-
-    main .logo-grande{
-        width: 80%;
-        margin-bottom: 3rem;
-    }
-
-    section{
-        padding: 0;
-    }
-
-    header .btn-mobile{
+@media (max-width: 1000px) {
+    header .btn-mobile {
         display: flex;
     }
 
-    header .nav{
+    header .nav {
         display: none;
     }
 
-    /* header .active{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-    } */
-
-    header .active{
+    header .menu.active {
         display: flex;
         align-items: end;
         flex-direction: column;
@@ -278,43 +331,89 @@ section .box .description-box p{
         left: 0;
         bottom: 0;
 
-        z-index: 100;
-        background-color: var(--collor-two);
+        z-index: 1001;
+        background-color: var(--collor-thre);
         letter-spacing: 0.6rem;
         border-radius: .5rem;
         height: 100vh;
         padding: 4.8rem;
+
+        animation-name: menu-mobile;
+        animation-duration: 2s;
     }
 
-    header .active .btn-mobile{
+    header .active .btn-mobile {
         margin-bottom: 10rem;
     }
 
-
-
-    header .active svg path{
+    header .active svg path {
         fill: var(--collor-four);
     }
 
-    header .active .nav, .active a{
+    header .active .nav,
+    .active a {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
         width: 100%;
+
         color: var(--collor-four);
     }
 
-    header .active a:hover{
+    header .active a:hover {
         cursor: pointer;
-        color: #BACC21;
+
+        color: var(--collor-light);
+
         transition: transform .5s;
     }
 
+    main {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        gap: 48px;
+        height: 80vh;
+        text-align: center;
+    }
+
+    main .box-description{
+        width: 80%;
+        /* gap: 2rem; */
+        justify-content: space-evenly;
+        gap: 4rem;
+    }
+
+    main .box-description p{
+        font-size: 4.2rem;
+    }
+
+    main .box-description img{
+        width: 100%;
+    }
+
+    main .button{
+        padding: 2rem 6rem;
+    }
+
+    main .button p{
+        font-size: 4.6rem;
+    }
+
+    main .button .arrow{
+        width: 4.8rem;
+    }
+
+    section#box-grid {
+        padding: 0 rem;
+        grid-template-columns: 1fr;
+    }
+
+    section .box-flor {
+        grid-template-columns: 1fr;
+    }
+
+   
 }
-
-
-
-
-
-
