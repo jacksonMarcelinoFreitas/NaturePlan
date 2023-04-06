@@ -49,11 +49,11 @@
 <h2 align="center">Alunos:</h2>
 <br>
 <p align="center" style="display: flex; align-items: center; justify-content:center; gap: 12px">
-    <img style="border-radius: 50%" src="./images/perfil-jackson.jfif" width="50" />
+    <img style="border-radius: 50%" src="./images/perfil-jackson.png" width="50" />
     Jackson Freitas
 </p>
 <p align="center" style="display: flex; align-items: center; justify-content:center; gap: 12px">
-    <img style="border-radius: 50%" src="./images/perfil-marilene.jfif" width="50" />
+    <img style="border-radius: 50%" src="./images/perfil-marilene.png" width="50" />
     Marilene Rita
 </p>
 </p>
