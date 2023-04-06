@@ -3,37 +3,45 @@ html, body{
     padding: 0;
 
 }
+
 body {
-   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
 }
+
+@font-face {
+    font-family: coolvetica;
+    src: url('../fonts/coolvetica/coolvetica\ rg.otf') format('opentype');
+}
+
 
 .background{
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: -1000;
-
-
 }
 
 #background{
     width: 100%;
     filter: opacity(0.3);
-    
 }
 
 header{
-    background-color: beige;
+    background-color: #f5e7d4;
     height: 80px;
     padding: 8px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 2px solid #463a2a3b;
 }
+
 header a{
     text-decoration: none;
-    color: black;
+    font-size: 24px;
+    font-family: 'coolvetica', sans-serif;
+    color: #463a2a;
 }
 
 header .menu{
@@ -57,7 +65,7 @@ main{
    justify-content: center;
    flex-direction: column;
    gap: 32px;
-   height: 100vh;
+   height: 80vh;
 }  
 
 .box-perfil{
@@ -70,29 +78,30 @@ main{
     justify-content: center;
      border: 3px solid #BACC21;
 }
+
 #perfil{
-    /* width: 100%; */
     height: 100%;
     bottom: 0;
 }
+
 .button{
-    width: 150px;
-    height: 30px;
-    background-color: #9F8257;
+    background-color: #e2ff979b;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    padding: 8px 0;
+    padding: 14px 48px;
+    border: 2px solid #97b46375;
 }
+
 .button svg path{
-    fill: white;
+    fill: #a4cc21;
 }
+
 .flores{
-   
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     row-gap: 10px;
     border-radius: 14px;
 }
@@ -112,22 +121,25 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    row-gap: 20px;
-   
+    row-gap: 50px;
+    column-gap: 50px;
 }
 
 section, .plantas div{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-
 }
 
-.container img {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
+footer{
+    background-color: #9F8257;
+    border-top: 2px solid #463a2a3e;
+    padding: 24px;
+    margin-top: 48px;
+}
+
+footer svg path{
+    fill: #ebf2ad;
 }
 
 
