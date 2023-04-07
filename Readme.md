@@ -37,8 +37,32 @@
         docker run --name nome_do_projeto_aqui -v "endereco_do_projeto_aqui:/usr/share/nginx/html" -p 5000:80 -d nginx
 
 ```
+## Páginas
 
-## Execução
+<p align="center" style="display: flex; align-items: center; justify-content:center; flex-direction:column; gap: 12px">
+    <div style="display: flex; align-items: center; justify-content:center; flex-direction:row; gap: 24px">
+        <img src="./images/screen1.png" width="90%" />
+    </div>
+    <br>
+    <div style="display: flex; align-items: center; justify-content:center; flex-direction:row; gap: 24px">
+        <img src="./images/screen5.gif" width="45%" />
+        <img src="./images/screen2.png" width="45%" />
+    </div>
+    <br>
+     <div style="display: flex; align-items: center; justify-content:center; flex-direction:row; gap: 24px">
+        <img src="./images/screen3.gif" width="45%" />
+        <img src="./images/screen7.png" width="45%" />
+     </div>
+    <br>
+    <div style="display: flex; align-items: center; justify-content:center; flex-direction:row; gap: 24px">
+        <img src="./images/screen6.gif" width="45%" />
+        <img src="./images/screen4.gif" width="45%" />
+    </div>
+    <br>
+</p>
+
+
+## Execução Docker
 <p align="center">
     <video src="./video/video-readme.mp4"></video>
 </p>
